@@ -3,35 +3,46 @@
 	<head>
 		<meta charset="utf-8">
 		<title>打工人-生活-程序员的黑洞</title>
-		<meta name="description" content="打工人 - 打工魂 - 打工人都是人上人| 程序员的黑洞！"/>
+		<meta name="description" content="打工人 - 打工魂 - 打工人都是人上人| 程序员的黑洞！" />
 		<meta name="keywords" content="早安打工人！打工人的生活,程序员的黑洞,三斤太阳光,三斤太阳光博客,技术博客,Java,风的小站">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="https://g-photo.oss-cn-shanghai.aliyuncs.com/hd.ico" />
 	</head>
 	<body class="container">
+		<div class="float-card">
+			<div class="float-card-item">
+				<a href="https://www.unfbx.com" target="_blank" rel="noopener noreferrer">Website</a>
+			</div>
+			<div class="float-card-item">
+				<a href="https://github.com/Grt1228" target="_blank" rel="noopener noreferrer">Github</a>
+			</div>
+		</div>
 		<div class="content left">
 			打工人
 		</div>
 		<div class="content rigth">
 			生活
 		</div>
+
 		<div class="content-cover">
 		</div>
 		<div class="content-cover">
 		</div>
 	</body>
 	<style>
-		.content-cover{
+		.content-cover {
 			width: 50%;
 			font-size: 12px;
 		}
-		.container{
+
+		.container {
 			display: flex;
 			flex-direction: row;
 			margin: 0;
 		}
-		.content{
+
+		.content {
 			width: 50%;
 			font-size: 80px;
 			align-items: center;
@@ -40,21 +51,48 @@
 			font-family: Verdana, Geneva, sans-serif;
 			color: #856d72;
 		}
-		.left{
+
+		.left {
 			background-color: #ccccd6;
 			position: absolute;
 			left: 0;
 			top: 0;
 			z-index: -1;
 		}
-		.rigth{
+
+		.rigth {
 			background-color: #e77c8e;
 			position: absolute;
 			right: 0;
 			top: 0;
 			z-index: -1;
 		}
+
+		.float-card {
+			position: fixed;
+			display: inline-block;
+			right: 20px;
+			top: 20px;
+		}
+		.float-card-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: #ccccd6;
+			margin-bottom: 16px;
+		}
+		.float-card-item:last-child{
+			margin-bottom: 0px;
+		}
 		
-		
+		.float-card-item a {
+			text-decoration: none;
+			color: #594649;
+			font-size: 13px;
+		}
 	</style>
 </html>
